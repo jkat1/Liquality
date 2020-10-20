@@ -1,16 +1,14 @@
 import React from "react";
 import { render } from "react-dom";
 import dotenv from 'dotenv'
-import Routes from "./routes/routes";
+import App from "./App"
 dotenv.config()
+import "./index.scss"
 
-import Header from './components/Header'
-
-class App extends React.Component {
+class AppWrapper extends React.Component {
   render() {
     return (
-      <div>
-        <Header />
+      <div>Hi
         {this.props.children}
       </div>
     );
@@ -18,6 +16,5 @@ class App extends React.Component {
 }
 
 
-render(<App>
-  <Routes />
-</App>, document.getElementById("app"));
+render(
+  <App />, document.getElementById("app"));

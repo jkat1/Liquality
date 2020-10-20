@@ -1,0 +1,18 @@
+.picker {
+  display: flex;
+}
+
+.pickerWrapper {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.pickerItem {
+  display: flex;
+
+  input {
+    min-width: 20px;
+    min-height: 20px;
+  }
+}

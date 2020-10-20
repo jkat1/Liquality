@@ -1,0 +1,29 @@
+.tableWrapper {
+  min-width: 800px;
+}
+
+.tableRow {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tableRow:nth-child(even) {
+  background: #ccc;
+}
+
+.tableRow div {
+  width: calc(100% / 7);
+  text-align: center;
+  padding: 5px;
+}
+
+.tableColMid {
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tableHeader {
+  text-transform: uppercase;
+  font-weight: bold;
+}
